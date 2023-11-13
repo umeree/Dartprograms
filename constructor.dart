@@ -91,9 +91,55 @@ class Mobile {
   }
 }
 
-void main(){
-  Student student = new Student("Umer", 22, 46);
 
+
+
+
+
+
+
+//Try to create a class Person with two properties: name, and planet.
+// Create a default constructor to initialize the values of the planet to earth.
+// Create an object of the class Person, set the name to “Your Name” and print the name and planet.
+
+
+class Person {
+  String? name;
+  String? planet;
+
+  Person(){
+    print("This is default constructor");
+    planet = "Earth";
+  }
+}
+
+class Tallib{
+  String? name;
+  int? age;
+  int? rollNumber;
+
+  Tallib(
+    this.name,
+    this.age,
+    this.rollNumber,
+  );
+}
+
+
+void main(){
+  Tallib tallib = new Tallib("Umer",23,466 );
+  print("Tallib name is ${tallib.name}");
+  print("Tallib age is ${tallib.age}");
+  print("Tallib roll number is ${tallib.rollNumber}");
+
+  Tallib tallib2 = new Tallib("Fahad",22,566 );
+  print("Tallib name is ${tallib2.name}");
+  print("Tallib age is ${tallib2.age}");
+  print("Tallib roll number is ${tallib2.rollNumber}");
+
+
+  Student student = new Student("Umer", 22, 46);
+  student.age = 34;
   Teacher teacher1 = new Teacher("Hamza", 32, "Science", 32000);
   teacher1.display();
   Teacher teacher2 = new Teacher("Ali", 35, "Maths", 45000);
@@ -125,8 +171,12 @@ void main(){
   mobile1.displayMobileDetails();
   var mobile2 = Mobile.namedConstructor("Apple", "White");
   mobile2.displayMobileDetails();
+
+
+  Person person = new Person();
+  person.name = "Umer";
+
+  print("Your name is ${person.name}");
+  print("Planet name is ${person.planet}");
+
 }
-
-
-
-
