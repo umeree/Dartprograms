@@ -1,5 +1,8 @@
 //Example 1
 
+import 'dart:ffi';
+import 'dart:svg';
+
 import 'Getter.dart';
 
 class Notebook {
@@ -48,7 +51,7 @@ void main(){
   //Example 2
 
   Kitab kb = new Kitab();
-  kb.name = "RICH DADA POOR DAD";
+  kb.name = "RICH DAD POOR DAD";
   kb.prize = 500;
   kb.display();
 

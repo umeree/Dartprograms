@@ -19,6 +19,7 @@ class Student extends Person{
   }
 }
 
+
 //Single Inheritance
 
 class Car {
