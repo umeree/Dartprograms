@@ -1,5 +1,5 @@
 class Animal{
-  void eat(){
+   eat(){
     print("Animal can eat");
   }
 }
@@ -11,17 +11,16 @@ class Dog extends Animal{
 class Cat extends Animal{
   @override
   void eat() {
-    // TODO: implement eat
     print("Cat can also eat");
   }
 }
 
 void main(){
-  Animal animal = new Animal();
-  animal.eat();
+  // Animal animal = new Animal();
+  // animal.eat();
 
-  Dog dog = new Dog();
-  dog.eat();
+  // Dog dog = new Dog();
+  // dog.eat();
 
   Cat cat = new Cat();
   cat.eat();

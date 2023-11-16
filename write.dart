@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:convert';
 void main(){
   File file = File('test.txt');
   file.writeAsStringSync("\nNow I am adding new content", mode: FileMode.append);
@@ -15,5 +16,4 @@ void main(){
     file2.writeAsStringSync('$name $phone\n', mode: FileMode.append);
   }
   print(file2.readAsStringSync());
-  var myFile = File("hello.txt");
 }

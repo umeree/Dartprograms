@@ -1,5 +1,6 @@
 class Employee{
   static int count = 0;
+  String Skoolname = Student.schoolName;
 
   Employee(){
     count ++;
@@ -12,6 +13,7 @@ class Employee{
 
 class Student{
   static String schoolName = "ABC School";
+  int count = Employee.count;
   int? id;
   String? name;
 
@@ -26,17 +28,9 @@ class Student{
 
 void main(){
   Employee empl = new Employee();
-  empl.totalEmployee();
-
-  Employee empl2 = new Employee();
-  empl2.totalEmployee();
-
-  Employee empl3 = new Employee();
-  empl3.totalEmployee();
-
-  String name = Student.schoolName;
-  print(name);
-
+  // empl.totalEmployee();
+  print("Name of empl3 School is ${empl.Skoolname}");
+  Employee.count;
 //Example 2
   Student std = new Student(1, "Umer");
   std.display();

@@ -4,6 +4,7 @@ import "dart:io";
 void main(){
   File file = File('test.txt');
   String contents = file.readAsStringSync();
+  
   print("Location of file is ${file.path}");
   print("Absolute path of file is ${file.absolute.path}");
   print("Size of file is ${file.lengthSync()}");
